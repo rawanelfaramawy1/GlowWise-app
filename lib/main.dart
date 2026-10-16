@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -33,14 +34,25 @@ void main() async {
   debugPrint('[MAIN] Initializing Firebase...');
   try {
     await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: 'AIzaSyAt20N-J8h-lNBzXcMMFH0xl7NtbXGhwrs',
-        appId: '1:1064209159921:android:641b319150a4b5e18dfb50',
-        messagingSenderId: '1064209159921',
-        projectId: 'glowwise-app',
-        storageBucket: 'glowwise-app.firebasestorage.app',
-      ),
+      options: kIsWeb
+          ? const FirebaseOptions(
+              apiKey: 'AIzaSyCcz22dIi593_kRr5agqcYp9povCq5Mm-k',
+              authDomain: 'glowwise-app.firebaseapp.com',
+              appId: '1:1064209159921:web:d94b839db9d24c6a8dfb50',
+              messagingSenderId: '1064209159921',
+              projectId: 'glowwise-app',
+              storageBucket: 'glowwise-app.firebasestorage.app',
+              measurementId: 'G-KLJQLHDY2H',
+            )
+          : const FirebaseOptions(
+              apiKey: 'AIzaSyAt20N-J8h-lNBzXcMMFH0xl7NtbXGhwrs',
+              appId: '1:1064209159921:android:641b319150a4b5e18dfb50',
+              messagingSenderId: '1064209159921',
+              projectId: 'glowwise-app',
+              storageBucket: 'glowwise-app.firebasestorage.app',
+            ),
     );
+    debugPrint('[MAIN] Platform: ${kIsWeb ? 'web' : 'android/other'}');
     debugPrint('[MAIN] Firebase initialized: ${Firebase.app().options.projectId}');
   } catch (e, stack) {
     debugPrint('[MAIN] Firebase initialization FAILED: $e');
