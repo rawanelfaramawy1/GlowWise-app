@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1064209159921",
+    "project_id": "glowwise-app",
+    "storage_bucket": "glowwise-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064209159921:android:641b319150a4b5e18dfb50",
+        "android_client_info": {
+          "package_name": "com.example.roowan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt20N-J8h-lNBzXcMMFH0xl7NtbXGhwrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

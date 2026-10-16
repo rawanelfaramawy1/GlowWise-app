@@ -1,0 +1,50 @@
+name: roowanglow
+
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.27.1
+  firebase_auth: ^4.17.4
+  cloud_firestore: ^4.15.9
+  firebase_storage: ^11.6.10
+  font_awesome_flutter: ^10.7.0
+  table_calendar: ^3.0.9
+  intl: ^0.19.0
+  video_player: ^2.5.0
+  just_audio: ^0.9.19
+  audioplayers: ^5.2.1
+  cupertino_icons: ^1.0.2
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/background.png
+    - assets/icons/
+    - assets/images/
+    - assets/images/product_consultation.png
+    - assets/images/skincare_education.png
+    - assets/images/selfcare_banner.png
+    - assets/images/logo.jpg
+    - assets/images/welcome_bg.jpg
+    - assets/images/glowing_skin.jpg
+    - assets/images/natural_oils.jpg
+    - assets/images/skin_types.png
+    - assets/images/cleanser.jpg
+    - assets/images/serum.jpg
+
+
+
